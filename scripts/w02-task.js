@@ -8,7 +8,7 @@ let fullName = "Facundo Borges";
 let d = new Date();
 let currentYear = d.getFullYear();
 
-let profilePicture = "../images/placeholder.png";
+let profilePicture = "/images/placeholder.png";
 
 
 /* Step 3 - Element Variables */
