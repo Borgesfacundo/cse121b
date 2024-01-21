@@ -3,12 +3,12 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-let fullName = "Facundo Borges";
+const fullName = "Facundo Borges";
 
-let d = new Date();
-let currentYear = d.getFullYear();
+const d = new Date();
+const currentYear = d.getFullYear();
 
-let profilePicture = "/images/placeholder.png";
+const profilePicture = "/images/placeholder.png";
 
 
 /* Step 3 - Element Variables */
