@@ -22,8 +22,8 @@ imageElement = document.querySelector("img");
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
-imageElement.setAttribute("src", profilePicture);
-imageElement.setAttribute("alt", `profile image of ${fullName}`);
+imageElement.setAttribute('src', profilePicture);
+imageElement.setAttribute('alt', `profile image of ${fullName}`);
 
 /* Step 5 - Array */
 foods = ["Milanesas Napolitanas", "Pizza", "Ñoquis", "Chicken Alfredo", "Marineras", "Feijoada", "Empanadas"];
