@@ -12,10 +12,10 @@ const profilePicture = "images/placeholder.png";
 
 
 /* Step 3 - Element Variables */
-nameElement = document.getElementById("name");
-foodElement = document.getElementById("food");
-yearElement = document.querySelector("#year");
-imageElement = document.querySelector("img");
+const nameElement = document.getElementById("name");
+const foodElement = document.getElementById("food");
+const yearElement = document.querySelector("#year");
+const imageElement = document.querySelector("img");
 
 
 
@@ -26,11 +26,11 @@ imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', `Profile image of ${fullName}.`);
 
 /* Step 5 - Array */
-foods = ["Milanesas Napolitanas", "Pizza", "Ñoquis", "Chicken Alfredo", "Marineras", "Feijoada", "Empanadas"];
+let foods = ["Milanesas Napolitanas", "Pizza", "Ñoquis", "Chicken Alfredo", "Marineras", "Feijoada", "Empanadas"];
 
 foodElement.textContent = foods;
 
-newFavFood = "Tacos";
+let newFavFood = "Tacos";
 foods.push(newFavFood);
 foodElement.innerHTML += `<br>${foods}`;
 foods.shift();
