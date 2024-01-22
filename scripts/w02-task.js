@@ -8,7 +8,7 @@ const fullName = "Facundo Borges";
 const d = new Date();
 const currentYear = d.getFullYear();
 
-const profilePicture = "/images/placeholder.png";
+const profilePicture = "images/placeholder.png";
 
 
 /* Step 3 - Element Variables */
@@ -23,7 +23,7 @@ imageElement = document.querySelector("img");
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
 imageElement.setAttribute('src', profilePicture);
-imageElement.setAttribute('alt', `profile image of ${fullName}`);
+imageElement.setAttribute('alt', `Profile image of ${fullName}.`);
 
 /* Step 5 - Array */
 foods = ["Milanesas Napolitanas", "Pizza", "Ñoquis", "Chicken Alfredo", "Marineras", "Feijoada", "Empanadas"];
