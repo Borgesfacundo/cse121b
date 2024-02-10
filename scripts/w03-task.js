@@ -18,14 +18,13 @@ document.querySelector("#addNumbers").addEventListener("click", addNumbers);
 
 
 /* Function Expression - Subtract Numbers */
-function subtract(number1, number2) {
+const subtract = function (number1, number2) {
     return number1 - number2;
 }
 
-function subtractNumbers() {
+const subtractNumbers = function () {
     let sub1 = document.querySelector("#subtract1").value;
     let sub2 = document.querySelector("#subtract2").value;
-
     document.querySelector("#difference").value = subtract(sub1, sub2);
 
 }
