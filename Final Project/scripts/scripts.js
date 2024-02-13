@@ -11,7 +11,7 @@ const displayCards = (cards) => {
     cards.forEach(card => {
         const article = document.createElement("article");
         const h3 = document.createElement("h3");
-        h3.textContent = card.name;
+        h3.textContent = `${card.name}`;
         const picture = document.createElement("img");
         picture.setAttribute("src", card.img);
         picture.setAttribute("alt", card.name);
