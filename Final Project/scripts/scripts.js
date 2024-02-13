@@ -1,4 +1,4 @@
-/* Final Project */
+/* My Final Project */
 
 /* Declaring global variables */
 const cardsElement = document.querySelector("#cards");
@@ -25,7 +25,7 @@ const displayCards = (cards) => {
 /* async getCards Function with fetch()
 Here I am getting the information about cards via a JSON file*/
 const getCards = async () => {
-    const response = await fetch("json/Yu-Gi-OhCards.json");
+    const response = await fetch("https://borgesfacundo.github.io/cse121b/Final%20Project/json/Yu-Gi-ohCards.json");
     if (response.ok) {
         const data = await response.json();
         cardList = data;
@@ -37,7 +37,7 @@ const getCards = async () => {
 
 
 /* reset Function
-this is being used to filter our cards */
+this is being used to clear cardsElement*/
 const reset = () => {
     var articles = cardsElement.querySelectorAll('article');
 
@@ -47,7 +47,7 @@ const reset = () => {
 }
 
 /* Filter Cards Function
-This function give the user the chance to filter cards */
+This function gives the user the opportunity to filter cards */
 filterCards = (cards) => {
     reset();
     const filter = document.querySelector("#filtered").value;
@@ -58,19 +58,20 @@ filterCards = (cards) => {
             cards.sort((a, b) => a.name.localeCompare(b.name));
             displayCards(cards);
             break;
+            //Sort cards showing only monster cards
         case "monsters":
             displayCards(cards.filter(card => card.level >= 1));
             break;
+            //sort cards showing only trap and magic cards
         case "trapAndMagic":
             displayCards(cards.filter(card => card.level === 0));
             break;
+            //who all cards
         case "all":
-            displayCards(cards)
+            displayCards(cardList)
             break;
     }
 };
-
-
 
 /* Event Listener */
 document.querySelector("#filtered").addEventListener("change", () => { filterCards(cardList); });
