@@ -1,0 +1,2 @@
+My project will show some of my favorite Yu-Gi-Oh cards and the user will be able to filter them by name, type of card (Magic, Monster, Trap)
+I will use an external JSON file that will contain the Yu-Gi-Oh information. To filter them i will use a conditional branching to filter all the information. And an array to get all the information from the JSON file.
