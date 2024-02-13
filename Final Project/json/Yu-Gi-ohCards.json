@@ -1,21 +1,20 @@
 [
     {
-        "id": 5405694,
+        "id": 40640057,
         "ot": 3,
         "alias": 0,
         "setcode": 0,
-        "type": 129,
-        "atk": 3000,
-        "def": 2500,
-        "level": 8,
-        "race": 1,
-        "attribute": 1,
-        "category": 0,
-        "img": "https://images.ygoprodeck.com/images/cards_small/5405694.jpg",
-        "name": "Black Luster Soldier",
-        "desc": "This monster can only be Ritual Summoned with the Ritual Spell Card, \"Black Luster Ritual\"."
+        "type": 33,
+        "atk": 300,
+        "def": 200,
+        "level": 1,
+        "race": 8,
+        "attribute": 32,
+        "category": 8,
+        "img": "https://images.ygoprodeck.com/images/cards_small/40640057.jpg",
+        "name": "Kuriboh",
+        "desc": "uring your opponent's turn, at damage calculation: You can discard this card; you take no battle damage from that battle (this is a Quick Effect)."
     },
-
     {
         "id": 46986414,
         "ot": 3,
@@ -79,6 +78,22 @@
         "img": "https://images.ygoprodeck.com/images/cards_small/28279543.jpg",
         "name": "Curse of Dragon",
         "desc": "A wicked dragon that taps into dark forces to execute a powerful attack."
+    },
+    {
+        "id": 5405694,
+        "ot": 3,
+        "alias": 0,
+        "setcode": 0,
+        "type": 129,
+        "atk": 3000,
+        "def": 2500,
+        "level": 8,
+        "race": 1,
+        "attribute": 1,
+        "category": 0,
+        "img": "https://images.ygoprodeck.com/images/cards_small/5405694.jpg",
+        "name": "Black Luster Soldier",
+        "desc": "This monster can only be Ritual Summoned with the Ritual Spell Card, \"Black Luster Ritual\"."
     },
     {
         "id": 91152256,
@@ -271,22 +286,6 @@
         "img": "https://images.ygoprodeck.com/images/cards_small/15025844.jpg",
         "name": "Mystical Elf",
         "desc": "A delicate elf that lacks offense, but has a terrific defense backed by mystical power."
-    },
-    {
-        "id": 40640057,
-        "ot": 3,
-        "alias": 0,
-        "setcode": 0,
-        "type": 33,
-        "atk": 300,
-        "def": 200,
-        "level": 1,
-        "race": 8,
-        "attribute": 32,
-        "category": 8,
-        "img": "https://images.ygoprodeck.com/images/cards_small/40640057.jpg",
-        "name": "Kuriboh",
-        "desc": "uring your opponent's turn, at damage calculation: You can discard this card; you take no battle damage from that battle (this is a Quick Effect)."
     },
     {
         "id": 55761792,

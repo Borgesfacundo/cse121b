@@ -8,6 +8,7 @@
 /* HTML Selectors */
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #080707;
 }
 
 nav {
@@ -64,6 +65,7 @@ h1,
 h2 {
     text-align: center;
     margin: 1rem 0 .5rem;
+    color: #5d0044;
 }
 
 h1 {
@@ -76,7 +78,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    color: navy;
+    color: #5d0044;
     text-align: center;
     margin-top: 25px;
 }
@@ -169,7 +171,8 @@ footer {
 
 /* Class Selectors */
 .active {
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid #5d0044;
+    ;
 }
 
 .open li {
@@ -251,23 +254,24 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: .5rem;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 8rem;
 }
 
 #cards article {
-    height: 250px;
+    height: 500px;
     margin: .5rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 4px solid rgba(0, 0, 0, .1);
     padding: 1rem;
-    background-color: #eee;
+    background-color: #5d0044;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#cards h4 {
-    color: navy;
+#cards h3 {
+    color: rgb(186, 186, 186);
     font-size: smaller;
 }
 
@@ -277,6 +281,11 @@ footer {
     height: auto;
     box-shadow: 0 0 30px #777;
     margin: .5rem;
+}
+
+#filtered {
+    background-color: #5d0044;
+    color:rgb(186, 186, 186)
 }
 
 /* Media Queries */

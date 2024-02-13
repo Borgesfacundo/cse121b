@@ -1,6 +1,6 @@
 /* Final Project */
 
-/* Declare global variables */
+/* Declaring global variables */
 const cardsElement = document.querySelector("#cards");
 let cardList = {};
 
@@ -23,45 +23,49 @@ const displayCards = (cards) => {
 
 
 /* async getCards Function with fetch()
-Here i am getting the information abot cards via a JSON file*/
+Here I am getting the information about cards via a JSON file*/
 const getCards = async () => {
     const response = await fetch("json/Yu-Gi-OhCards.json");
     if (response.ok) {
         const data = await response.json();
-        templeList = data;
-        displayTemples(templeList);
+        cardList = data;
+        displayCards(cardList);
     }
-
-    console.log(templeList);
+    //Checking console log
+    console.log(cardList);
 }
 
 
-/* reset Function */
+/* reset Function
+this is being used to filter our cards */
 const reset = () => {
-    var articles = templesElement.querySelectorAll('article');
+    var articles = cardsElement.querySelectorAll('article');
 
     articles.forEach(function (article) {
-        templesElement.removeChild(article);
+        cardsElement.removeChild(article);
     })
 }
 
-/* filterTemples Function */
-filterTemples = (temples) => {
+/* Filter Cards Function
+This function give the user the chance to filter cards */
+filterCards = (cards) => {
     reset();
     const filter = document.querySelector("#filtered").value;
 
     switch (filter) {
-        case "utah":
-            displayTemples(temples.filter(temple => temple.location.includes("Utah")));
+        case "name":
+            //sort cards alphabetically by name
+            cards.sort((a, b) => a.name.localeCompare(b.name));
+            displayCards(cards);
             break;
-        case "notutah":
-            displayTemples(temples.filter(temple => !temple.location.includes("Utah")));
+        case "monsters":
+            displayCards(cards.filter(card => card.level >= 1));
             break;
-        case "older":
-            displayTemples(temples.filter(temple => new Date(temple.dedicated) < new Date(1950, 0, 1)));
+        case "trapAndMagic":
+            displayCards(cards.filter(card => card.level === 0));
             break;
         case "all":
-            displayTemples(temples)
+            displayCards(cards)
             break;
     }
 };
@@ -69,7 +73,7 @@ filterTemples = (temples) => {
 
 
 /* Event Listener */
-document.querySelector("#filtered").addEventListener("change", () => { filterTemples(templeList); });
+document.querySelector("#filtered").addEventListener("change", () => { filterCards(cardList); });
 
-getTemples();
+getCards();
 
