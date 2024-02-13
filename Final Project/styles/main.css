@@ -57,8 +57,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #efefef;
-    color: black;
+    background-color: #5d0044;
+    color: white;
+    
 }
 
 h1,
@@ -172,7 +173,7 @@ footer {
 /* Class Selectors */
 .active {
     border-bottom: 1px solid #5d0044;
-    ;
+    
 }
 
 .open li {
@@ -272,7 +273,7 @@ footer {
 
 #cards h3 {
     color: rgb(186, 186, 186);
-    font-size: smaller;
+    font-size: 1em;
 }
 
 
