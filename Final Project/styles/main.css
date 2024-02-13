@@ -59,7 +59,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #5d0044;
     color: white;
-    
+
 }
 
 h1,
@@ -173,7 +173,7 @@ footer {
 /* Class Selectors */
 .active {
     border-bottom: 1px solid #5d0044;
-    
+
 }
 
 .open li {
@@ -286,7 +286,7 @@ footer {
 
 #filtered {
     background-color: #5d0044;
-    color:rgb(186, 186, 186);
+    color: rgb(186, 186, 186);
     height: 3em;
     border-radius: 10%;
 }
@@ -294,7 +294,9 @@ footer {
 #select {
     text-align: center;
     margin-top: 4em;
-} 
+}
+
+
 
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
@@ -330,3 +332,4 @@ footer {
     }
 
 }
+

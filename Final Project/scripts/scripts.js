@@ -2,6 +2,7 @@
 
 /* Declaring global variables */
 const cardsElement = document.querySelector("#cards");
+const backElemetn = document.querySelector("#flip-card-back");
 let cardList = {};
 
 
