@@ -2,7 +2,6 @@
 
 /* Declaring global variables */
 const cardsElement = document.querySelector("#cards");
-const backElemetn = document.querySelector("#flip-card-back");
 let cardList = {};
 
 
@@ -95,7 +94,7 @@ filterCards = (cards) => {
             break;
             //who all cards
         case "all":
-            displayCards(cardList)
+            getCards()
             break;
     }
 };
