@@ -13,11 +13,33 @@ const displayCards = (cards) => {
         const article = document.createElement("article");
         const h3 = document.createElement("h3");
         h3.textContent = `${card.name}`;
+        const flipCard = document.createElement("div");
+        flipCard.setAttribute("class", "flip-card")
+
+        const flipCardInner = document.createElement("div");
+        flipCardInner.setAttribute("class", "flip-card-inner");
+        flipCard.appendChild(flipCardInner);
+        
+        //add a new div to put the img inside
+        const flipCardFront = document.createElement("div");
+        flipCardFront.setAttribute("class", "flip-card-front")
+        flipCardInner.appendChild(flipCardFront);
+
+        const flipCardBack = document.createElement("div");
+        flipCardBack.setAttribute("class", "flip-card-back");
+        //add description
+        
+        flipCardInner.appendChild(flipCardBack);
+
+
+
         const picture = document.createElement("img");
         picture.setAttribute("src", card.img);
         picture.setAttribute("alt", card.name);
+        //add picture inside div
+        flipCardFront.appendChild(picture);
         article.appendChild(h3);
-        article.appendChild(picture);
+        article.appendChild(flipCard);
         cardsElement.appendChild(article);
     })
 };
