@@ -201,6 +201,49 @@ footer {
     justify-content: right;
     gap: 1rem;
 }
+.flip-card {
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    background-color: #5d0044;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+
+}
+
+
+
+/* Style the back side */
+.flip-card-back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -130px 80px -30px -125px;
+    background-color: #5d0044;
+    color: rgb(186, 186, 186);
+    transform: rotateY(180deg);
+    text-align: center;
+
+}
 
 /* ID Selectors */
 
@@ -295,53 +338,6 @@ footer {
 #select {
     text-align: center;
     margin-top: 4em;
-}
-
-.flip-card {
-    perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-    position: relative;
-    background-color: #5d0044;
-    text-align: center;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
-
-}
-
-
-
-/* Style the back side */
-.flip-card-back {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -130px 80px -30px -125px;
-
-    /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
-
-    background-color: #5d0044;
-    color: rgb(186, 186, 186);
-    transform: rotateY(180deg);
-    text-align: center;
-
 }
 
 #desc {
