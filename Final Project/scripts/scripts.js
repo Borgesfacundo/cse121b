@@ -28,6 +28,10 @@ const displayCards = (cards) => {
         const flipCardBack = document.createElement("div");
         flipCardBack.setAttribute("class", "flip-card-back");
         //add description
+        const p = document.createElement("p");
+        p.setAttribute("id", "desc")
+        p.textContent = `Description: ${card.desc}`;
+        flipCardBack.appendChild(p);
         
         flipCardInner.appendChild(flipCardBack);
 
@@ -100,4 +104,3 @@ filterCards = (cards) => {
 document.querySelector("#filtered").addEventListener("change", () => { filterCards(cardList); });
 
 getCards();
-
