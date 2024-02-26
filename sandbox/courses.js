@@ -1,3 +1,9 @@
+let pagination = 10;
+let i = 1;
+while ( i >= pagination ) {
+  console.log(`pass ${i}`);
+  i++;
+}
 const aCourse = {
     code: "CSE121b",
     name: "Javascript Language",
@@ -85,3 +91,4 @@ const aCourse = {
   //    renderSections(this.sections);
   //  }
   //}
+
